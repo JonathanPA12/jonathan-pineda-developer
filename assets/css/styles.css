@@ -254,8 +254,8 @@ img {
   color: var(--first-color);
 }
 
-/*posicion del mennu*/
-@media screen and (max-width: 767px) {
+/*posicion del mennu max-width: 767px*/
+@media screen and (max-width: 2014px) {
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -580,6 +580,9 @@ img {
 
 .skills__aws {
   width: 60%;
+}
+.skills__etapa{
+  width: 45%;
 }
 
 .skills__close .skills__list {

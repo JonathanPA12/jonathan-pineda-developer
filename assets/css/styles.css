@@ -58,8 +58,8 @@
   --z-modal: 1000;
 }
 
-/* Font size for large devices */
-@media screen and (min-width: 968px) {
+/* Font size for large devices 968px*/
+@media screen and (min-width: 1024px) {
   :root {
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -228,7 +228,7 @@ img {
 
 /*==================== NAV ====================*/
 .nav {
-  max-width: 968px;
+  max-width: 968px; /*968px*/
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -708,3 +708,24 @@ img {
 
 
 /* For large devices */
+
+
+
+/*spiner de progreso*/
+.spinner-grow {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  color:rgb(42, 233, 51);
+  border: .25rem solid currentColor;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

@@ -7,11 +7,11 @@
 
   /*========== Colors ==========*/
   /* Change favorite color  COLOR DEL TEMA GENERAL*/
-  --hue-color: 250;
-  /*Purple 250 - Green 142 - Blue 230 - Pink 340 - celeste 199- */
+  --hue-color: 35;
+  /*Purple 250 - Green 142 - Blue 230 - Pink 340 - celeste 199- PAPAYA 22- */
 
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color: hsl(var(--hue-color), 100%, 50%); /*--first-color: hsl(var(--hue-color), 69%, 61%);*/
   /*cambiar el fondo de la foto*/
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);

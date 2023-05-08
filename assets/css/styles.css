@@ -717,7 +717,7 @@ img {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  color:rgb(42, 233, 51);
+  color:var(--first-color);
   border: .25rem solid currentColor;
   border-top-color: transparent;
   animation: spin 1s linear infinite;

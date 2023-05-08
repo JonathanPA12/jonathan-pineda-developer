@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /* Change favorite color */
+  /* Change favorite color  COLOR DEL TEMA GENERAL*/
   --hue-color: 250;
   /*Purple 250 - Green 142 - Blue 230 - Pink 340 - celeste 199- */
 
@@ -148,81 +148,84 @@ img {
 */
 
 .container {
-max-width: 768px;
-margin-left: var(--mb-1-5);
-margin-right: var(--mb-1-5);
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
 }
 
 .grid {
-display: grid;
-gap: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
 }
 
 .header {
-position: fixed;
-bottom: 0;
-left: 0;
-z-index: var(--z-fixed);
-width: 100%;
-background-color: var(--body-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  width: 100%;
+  background-color: var(--body-color);
 }
 
 
 
 .nav__list {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-max-width: 768px;
-list-style: none;
-margin: 0;
-padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 768px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
 }
 
 .nav__item {
-margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .nav__link {
-text-decoration: none;
-color: var(--title-color);
-font-weight: 700;
-font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .home {
-margin-top: var(--header-height); /* Añade un margen superior para evitar superposición con la barra de navegación /
+  margin-top: var(--header-height);
+  /* Añade un margen superior para evitar superposición con la barra de navegación /
 / width: 100vw; / / Opcional: hacer que la sección de inicio ocupe todo el ancho de la pantalla */
 }
 
 .home__img {
-width: 200px; /* Ajusta el ancho y alto de la imagen de perfil */
-height: 200px;
+  width: 200px;
+  /* Ajusta el ancho y alto de la imagen de perfil */
+  height: 200px;
 }
 
 .home__blob {
-width: 200px;
-height: 187px;
+  width: 200px;
+  height: 187px;
 }
 
 .home__blob-img {
-width: 200px;
-height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .home__title {
-font-size: 3rem;
+  font-size: 3rem;
 }
 
 .home__subtitle {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .home__description {
-font-size: 1.2rem;
+  font-size: 1.2rem;
 }
+
 /*==================== NAV ====================*/
 .nav {
   max-width: 968px;
@@ -230,7 +233,7 @@ font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
+}
 
 .nav__logo,
 .nav__toggle {
@@ -250,6 +253,7 @@ font-size: 1.2rem;
 .nav__toggle:hover {
   color: var(--first-color);
 }
+
 /*posicion del mennu*/
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -263,7 +267,7 @@ font-size: 1.2rem;
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
-  
+
 }
 
 .nav__list {
@@ -303,7 +307,7 @@ font-size: 1.2rem;
 
 /* show menu */
 .show-menu {
-  bottom: 0; 
+  bottom: 0;
 }
 
 /* Active link */
@@ -442,7 +446,8 @@ font-size: 1.2rem;
   justify-content: space-evenly;
   margin-bottom: var(--mb-2-5);
 }
-.about__info-title{
+
+.about__info-title {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
@@ -459,14 +464,34 @@ font-size: 1.2rem;
   text-align: center;
 
 }
-.about__buttons{
+
+.about__buttons {
   display: flex;
   justify-content: center;
 
 }
 
 /*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 0;
+}
 
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.skills__icon{
+  margin-right: var(--mb-0-75);
+  
+}
 
 /*==================== QUALIFICATION ====================*/
 

@@ -139,34 +139,98 @@ img {
 }
 
 /*==================== LAYOUT ====================*/
+/*
+:root {
+--header-height: 80px; // Define una variable para la altura de la barra de navegación
+--mb-1-5: 1.5rem;
+--z-fixed: 100;
+} 
+*/
+
 .container {
-  max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+max-width: 768px;
+margin-left: var(--mb-1-5);
+margin-right: var(--mb-1-5);
 }
 
 .grid {
-  display: grid;
-  gap: .5rem;
+display: grid;
+gap: 1.5rem;
 }
-
 
 .header {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
+position: fixed;
+bottom: 0;
+left: 0;
+z-index: var(--z-fixed);
+width: 100%;
+background-color: var(--body-color);
 }
 
+
+
+.nav__list {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+max-width: 768px;
+list-style: none;
+margin: 0;
+padding: 0;
+
+}
+
+.nav__item {
+margin: 0 1rem;
+}
+
+.nav__link {
+text-decoration: none;
+color: var(--title-color);
+font-weight: 700;
+font-size: 1.2rem;
+}
+
+.home {
+margin-top: var(--header-height); /* Añade un margen superior para evitar superposición con la barra de navegación /
+/ width: 100vw; / / Opcional: hacer que la sección de inicio ocupe todo el ancho de la pantalla */
+}
+
+.home__img {
+width: 200px; /* Ajusta el ancho y alto de la imagen de perfil */
+height: 200px;
+}
+
+.home__blob {
+width: 200px;
+height: 187px;
+}
+
+.home__blob-img {
+width: 200px;
+height: 200px;
+}
+
+.home__title {
+font-size: 3rem;
+}
+
+.home__subtitle {
+font-size: 1.5rem;
+}
+
+.home__description {
+font-size: 1.2rem;
+}
 /*==================== NAV ====================*/
 .nav {
   max-width: 968px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-}
+  align-items: center;
+  }
 
 .nav__logo,
 .nav__toggle {
@@ -186,13 +250,13 @@ img {
 .nav__toggle:hover {
   color: var(--first-color);
 }
-
-@media screen and (min-width: 767px) {
+/*posicion del mennu*/
+@media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
     bottom: -100%;
     left: 0;
-    width: 100px;
+    width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
@@ -221,7 +285,7 @@ img {
 }
 
 .nav__icon {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav__close {
@@ -239,7 +303,7 @@ img {
 
 /* show menu */
 .show-menu {
-  bottom: 0;
+  bottom: 0; 
 }
 
 /* Active link */

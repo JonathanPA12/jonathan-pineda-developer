@@ -743,3 +743,10 @@ img {
   }
 }
 
+/*icon de conf rotacion*/
+.skills__confi {
+  margin-right: var(--mb-0-75);
+  font-size: 2rem;
+  color: var(--first-color);
+}
+

@@ -601,7 +601,7 @@ img {
 }
 
 .skills__etapa {
-  width: 45%;
+  width: 52%;
 }
 
 .skills__close .skills__list {
@@ -833,12 +833,14 @@ img {
 /*spiner de progreso*/
 .spinner-grow {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
-  color: var(--first-color);
-  border: .25rem solid currentColor;
-  border-top-color: transparent;
+  /* color: var(--first-color); */
+  /* border: .25rem solid currentColor;
+  border-top-color: transparent; */
+  border-color: transparent;
+  border-top-color: currentColor;
   animation: spin 1s linear infinite;
 }
 

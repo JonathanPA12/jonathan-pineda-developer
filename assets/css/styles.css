@@ -970,7 +970,7 @@ img {
 }
 
 .color__picker:hover::before {
-  content: "Change my color theme!";
+  content: "Only available on PC!";
   position: absolute;
   top: -30px;
   left: -10px;

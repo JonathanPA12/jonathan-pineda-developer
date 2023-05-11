@@ -11,7 +11,7 @@
     />
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -26,7 +26,7 @@
           <span class="visually-hidden">⚙️</span>
         </div>
         Follow my progress (Completed)...</h3>
-      <span class="skills__number">52%</span>
+      <span class="skills__number">56%</span>
     </div>
     <div class="skills__bar">
       <span class="skills__percentage skills__etapa"></span>
@@ -562,8 +562,9 @@
           <!--==================== SERVICE 1 ====================-->
           <div class="services__content">
             <div>
-              <i class="uil uil-web-grid-alt services__icon"></i>
-              <h3 class="services__title">Ui/Ux <br> Designer</h3>
+              <!-- <i class="uil uil-web-grid-alt services__icon"></i> -->
+              <i class="uil uil-processor services__icon"></i>
+              <h3 class="services__title">IT<br> Developer</h3>
             </div>
             
             <span class="button button--flex button--small button--link services__button">
@@ -682,6 +683,63 @@
       <section class="portfolio section" id="portfolio">
         <h2 class="section__title">Portfolio</h2>
         <span class="section__subtitle">Most resent work</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+
+              <!--==================== PORTFOLIO 1 ====================-->
+                <div class="portfolio__content grid swiper-slide">
+                  <img src="/assets/img/portfoliov2.jpg" alt="portafolio" class="portfolio_img">
+                  <div class="portfolio__data">
+                    <h2 class="portfolio__title">Modern website</h2>
+                    <p class="portfolio__description">A responsive website</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                      Demo
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>  
+                </div>
+                <!--==================== PORTFOLIO 2 ====================-->
+                <div class="portfolio__content grid swiper-slide">
+                  <!-- <img src="/assets/img/portfolio2.jpg" alt="portafolio" class="portfolio_img"> -->
+                  <iframe width="560" height="315" class="portfolio_img" src="https://www.youtube.com/embed/249lFqdHnMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div class="portfolio__data">
+                    <h2 class="portfolio__title">Brand Design</h2>
+                    <p class="portfolio__description">Content creator</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                      Demo
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>  
+                </div>
+                <!--==================== PORTFOLIO 3 ====================-->
+                <div class="portfolio__content grid swiper-slide">
+                  <!-- <img src="/assets/img/portfolio3.jpg" alt="portafolio" class="portfolio_img"> -->
+                  <iframe width="560" height="315" class="portfolio_img" src="https://www.youtube.com/embed/WSr1AUFxlkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                  <div class="portfolio__data">
+                    <h2 class="portfolio__title">Gaming for sure!</h2>
+                    <p class="portfolio__description">Apps for android and online games.</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                      Demo
+                      <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                  </div>  
+                </div>
+
+          </div>
+          <!--FLECHAS -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!--PAGINACION-->
+          <div class="swiper-pagination"></div>
+        </div>
+
+
       </section>
 
       <!--==================== PROJECT IN MIND ====================-->
@@ -700,7 +758,7 @@
     <!--==================== SCROLL TOP ====================-->
 
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>

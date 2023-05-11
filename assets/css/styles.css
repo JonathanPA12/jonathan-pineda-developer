@@ -321,6 +321,7 @@ img {
 /*==================== HOME ====================*/
 .home__container {
   gap: 1rem;
+
 }
 
 .home__content {
@@ -927,4 +928,19 @@ content: var(--container-color);
   margin-right: var(--mb-0-75);
   font-size: 2rem;
   color: var(--first-color);
+}
+
+
+
+input[type="color"] {
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  padding: 10;
+  height: 4em;
+  width: 4em;
+  overflow: hidden;
+}
+.colorpicker{
+  align-items: flex;
 }

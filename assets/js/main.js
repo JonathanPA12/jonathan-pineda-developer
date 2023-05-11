@@ -119,3 +119,13 @@ let swiper = new Swiper(".portfolio__container", {
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+
+
+const colorPicker = document.getElementById('colorpicker');
+const root = document.documentElement;
+
+colorPicker.addEventListener('input', (e) => {
+  const color = e.target.value;
+  const hue = parseInt(color.substring(1, 3), 16);
+  root.style.setProperty('--hue-color', hue);
+});

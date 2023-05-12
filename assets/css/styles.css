@@ -425,6 +425,16 @@ img {
 
 }
 
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: #fff;
+  color: var(--first-color-second);
+}
+
 .button--flex {
   display: inline-flex;
   align-items: center;
@@ -877,7 +887,49 @@ img {
 }
 
 /*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
 
+.project__bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project__title,
+.project__description {
+  color: #fff;
+}
+
+.project__img {
+  /* width: 232px; */
+  justify-self: center;
+
+
+  /*centrar la imagen*/
+  margin-bottom: -54px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 400%;
+}
+
+.project__img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+  content: 'This images was designed by an AI';
+  cursor: pointer;
+  position: center;
+}
 
 /*==================== TESTIMONIAL ====================*/
 
@@ -948,7 +1000,7 @@ img {
   border: none;
 }
 
-.color__picker{
+.color__picker {
   font-size: var(--h1-font-size);
   color: var(--title-color);
   border: none;
@@ -971,7 +1023,7 @@ img {
 }
 
 .color__picker:hover::before {
-  content: "Only available on PC!";
+  content: "Only available for the newest version phones!";
   position: absolute;
   top: -30px;
   left: -10px;
@@ -982,6 +1034,7 @@ img {
   border-radius: 4px;
   z-index: 1;
 }
+
 .color__picker {
   position: relative;
 }

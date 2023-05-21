@@ -98,12 +98,17 @@ let swiperPortafolio = new Swiper('.portfolio__container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    autoplay: {
+        delay: 3000, // Intervalo de tiempo entre cada cambio de testimonio (en milisegundos)
+        disableOnInteraction: false, // Permite que la reproducción automática continúe incluso cuando el usuario interactúa con los testimonios
+      },
     pagination:{
         el: '.swiper-pagination',
         clickable: true,
     },
      mousewheel: true,
      keyboard: true,
+     direction: 'horizontal', // Establece la dirección del deslizamiento de izquierda a derecha
 });
 
 /*==================== TESTIMONIAL ====================*/
@@ -112,6 +117,10 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     grabCursor: true,
     spaceBetween: 48,
     slidesPerView: 'auto', // Cambia esta línea
+    autoplay: {
+        delay: 3000, // Intervalo de tiempo entre cada cambio de testimonio (en milisegundos)
+        disableOnInteraction: false, // Permite que la reproducción automática continúe incluso cuando el usuario interactúa con los testimonios
+      },
     pagination:{
         el: '.swiper-pagination',
         clickable: true,

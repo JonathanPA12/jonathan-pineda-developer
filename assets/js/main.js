@@ -191,17 +191,17 @@ themeButton.addEventListener('click', () => {
 
 
 /*==================== COLOR PICKER ====================*/ 
-// const colorPicker = document.getElementById('colorpicker');
-// const colorPickerBtn = document.querySelector('.color__picker');
+ const colorPicker = document.getElementById('colorpicker'); 
+ const colorPickerBtn = document.querySelector('.color__picker');
 
-// colorPickerBtn.addEventListener('click', () => {
-//   colorPicker.click();
-// });
+ colorPickerBtn.addEventListener('click', () => {
+   colorPicker.click();
+ });
 
-// colorPicker.addEventListener('input', (e) => {
-//   const color = e.target.value;
-//   const hue = parseInt(color.substring(1, 3), 16);
-//   document.documentElement.style.setProperty('--hue-color', hue);
-// });
+ colorPicker.addEventListener('input', (e) => {
+   const color = e.target.value;
+   const hue = parseInt(color.substring(1, 3), 16);
+   document.documentElement.style.setProperty('--hue-color', hue);
+ });
 
 

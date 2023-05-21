@@ -1609,3 +1609,14 @@ img {
 .color__picker:hover::after {
   opacity: 1;
 }
+.colorpicker-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.colorpicker-wrapper.show {
+  display: block;
+}

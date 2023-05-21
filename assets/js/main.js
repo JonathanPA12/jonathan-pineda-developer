@@ -203,5 +203,21 @@ themeButton.addEventListener('click', () => {
    const hue = parseInt(color.substring(1, 3), 16);
    document.documentElement.style.setProperty('--hue-color', hue);
  });
+// Obtener elementos del DOM
+const colorPickerWrapper = document.querySelector('.colorpicker-wrapper');
+const colorPickerContainer = document.querySelector('.color__picker-container');
+
+// Agregar evento al hacer clic en el contenedor
+colorPickerContainer.addEventListener('click', function() {
+  // Mostrar o ocultar el color picker
+  colorPickerWrapper.classList.toggle('show');
+});
+
+// Ocultar el color picker al hacer clic fuera de él
+document.addEventListener('click', function(event) {
+  if (!colorPickerContainer.contains(event.target)) {
+    colorPickerWrapper.classList.remove('show');
+  }
+});
 
 

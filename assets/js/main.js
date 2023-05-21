@@ -231,3 +231,7 @@ document.addEventListener('click', function(event) {
 });
 
 
+/*==================== obtener fecha ====================*/
+var currentDateElement = document.getElementById("currentDate");
+var currentDate = new Date().toISOString().slice(0, 10);
+currentDateElement.innerHTML = currentDate;

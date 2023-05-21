@@ -111,6 +111,7 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
     loop: true,
     grabCursor: true,
     spaceBetween: 48,
+    slidesPerView: 'auto', // Cambia esta línea
     pagination:{
         el: '.swiper-pagination',
         clickable: true,

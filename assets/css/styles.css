@@ -996,7 +996,7 @@ img {
   color: var(--text-color-light);
 }
 
-.testomonial__description {
+.testimonial__description {
   margin-bottom: var(--mb-2-5);
 }
 
@@ -1005,10 +1005,10 @@ img {
   margin-right: var(--mb-0-25);
 }
 
-/* .swiper-container .swiper-pagination-testimonial{
+.swiper-container .swiper-pagination-testimonial{
   bottom: 0;
 
-} */
+}
 
 /*==================== CONTACT ME ====================*/
 .contact__container {
@@ -1233,7 +1233,7 @@ img {
   }
 
   .testimonial__data,
-  .testomonial__description {
+  .testimonial__description {
     text-align: center;
   }
 
@@ -1503,6 +1503,9 @@ img {
   }
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial__container {
+    overflow: hidden; /* Agrega esta línea */
   }
 
 }

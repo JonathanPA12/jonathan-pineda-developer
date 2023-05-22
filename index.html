@@ -16,6 +16,13 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!--=================== Servicio de emailJs ===========================-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('ecdPtgLRzZkKUZiSR') </script>
+
+       <!--=================== sweetAlert ===========================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
 
     <title>Devop. Jonathan Pineda CV</title>
   </head>
@@ -144,7 +151,7 @@
                   y ="4" 
                   
 
-                    href="assets/img/profile-preview.png"
+                    href="assets/img/vprofile.png"
                   />
                 </g>
               </svg> 
@@ -883,7 +890,7 @@
 
               <div>
                 <h3 class="contact__title">Call me</h3>
-                <span class="contact__subtitle">+506 8888 8888</span>
+                <span class="contact__subtitle">+506 ---- ----</span>
               </div>
             </div>
 
@@ -903,36 +910,38 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
+          <form action="" id="form" class="contact__form grid">
             <div class="contact__inputs grid">
 
               <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input">
+                <label for="from_name" class="contact__label">Name</label>
+                <input type="text" class="contact__input" name="from_name" id="from_name" required>
               </div>
 
               <div class="contact__content">
                 <label for="" class="contact__label">Email</label>
-                <input type="email" class="contact__input">
+                <input type="email" class="contact__input" name="email_id" id="email_id">
               </div>
 
             </div>
             
             <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input">
+              <label for="" class="contact__label">Subject</label>
+              <input type="text" class="contact__input" name="subject" id="subject">
             </div>
             
             <div class="contact__content">
               <label for="" class="contact__label">Messaje</label>
-              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+              <textarea cols="0" rows="7" class="contact__input" name="message" id="message"></textarea>
             </div>
 
             <div>
-              <a href="#" class="button button--flex">
+              <!-- <a href="#" class="button button--flex">
                 Send Messaje
                 <i class="uil uil-message button__icon"></i>
-              </a>
+              </a> -->
+              <input type="submit" id="button" value="Send Email" class="button button--flex">
+              <!-- <i class="uil uil-message button__icon"></i> -->
             </div>
           </form>
         </div>
@@ -989,5 +998,9 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+
+     <!--==================== sweetAlert JS ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
   </body>
 </html>

@@ -235,3 +235,50 @@ document.addEventListener('click', function(event) {
 var currentDateElement = document.getElementById("currentDate");
 var currentDate = new Date().toISOString().slice(0, 10);
 currentDateElement.innerHTML = currentDate;
+
+
+/*==================== SERVICIO DE CORREO ====================*/
+// document.getElementById('form')
+//  .addEventListener('submit', function(event) {
+//    event.preventDefault();
+
+//    button.value = 'Sending...';
+
+//    const serviceID = 'default_service';
+//    const templateID = 'template_kc1vozr';
+
+
+//    emailjs.sendForm(serviceID, templateID, this)
+//     .then(() => {
+//         button.value = 'Send Email';
+//       alert('Sent!');
+//     }, (err) => {
+//         button.value = 'Send Email';
+//       alert(JSON.stringify(err));
+//     });
+// });
+document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  
+    button.value = 'Sending...';
+  
+    const serviceID = 'default_service';
+    const templateID = 'template_kc1vozr';
+  
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        button.value = 'Send Email';
+        Swal.fire({
+          title: 'Success',
+          text: 'Email sent!',
+          icon: 'success',
+          showConfirmButton: false,
+          timer: 2000
+        });
+        this.reset();
+      }, (err) => {
+        button.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
+  

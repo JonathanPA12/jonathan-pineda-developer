@@ -1555,7 +1555,7 @@ img {
   color: var(--first-color);
 }
 
-
+/*==================== COLOR PICKER ====================*/
 .colorpicker {
   display: none;
   border-radius: 54px;
@@ -1629,4 +1629,12 @@ img {
 
 .colorpicker-wrapper.show {
   display: block;
+}
+
+/*==================== SERVICIO DE GOOGLETRANSLATE ====================*/
+#google_translate_element {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999;
 }

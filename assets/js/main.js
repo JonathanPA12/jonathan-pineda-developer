@@ -282,3 +282,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
       });
   });
   
+  /*==================== SERVICIO DE google tranlator ====================*/
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        

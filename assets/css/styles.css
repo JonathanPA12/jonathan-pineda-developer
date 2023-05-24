@@ -884,6 +884,31 @@ img {
 .donwload__button:hover .button__icon {
   transform: translateY(.25rem);
 }
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-0.1rem, -0.1rem);
+  }
+  40% {
+    transform: translate(0.1rem, -0.1rem);
+  }
+  60% {
+    transform: translate(-0.1rem, 0.1rem);
+  }
+  80% {
+    transform: translate(0.1rem, 0.1rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.github__button:hover .button__icon {
+  animation: vibrate 0.5s linear infinite;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';

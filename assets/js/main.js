@@ -99,7 +99,7 @@ let swiperPortafolio = new Swiper('.portfolio__container', {
         prevEl: '.swiper-button-prev',
     },
     autoplay: {
-        delay: 5000, // Intervalo de tiempo entre cada cambio de testimonio (en milisegundos)
+        delay: 7000, // Intervalo de tiempo entre cada cambio de testimonio (en milisegundos)
         disableOnInteraction: false, // Permite que la reproducción automática continúe incluso cuando el usuario interactúa con los testimonios
       },
     pagination:{

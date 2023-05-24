@@ -168,7 +168,6 @@ function scrollUp(){
     if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
-
 /*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -182,28 +181,32 @@ const selectedIcon = localStorage.getItem('selected-icon')
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+// Set the theme and icon based on the previously selected theme (default to dark theme if none selected)
+if (!selectedTheme) {
+  // If no theme is selected, set the dark theme as the default theme
+  document.body.classList.add(darkTheme)
+  themeButton.classList.add(iconTheme)
+} else {
+  // If a theme is selected, set it accordingly
+  document.body.classList.add(selectedTheme)
+  themeButton.classList.add(selectedIcon)
 }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(iconTheme)
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
-});
 const setTooltipText = () => {
-    const tooltipText = getCurrentTheme() === 'dark' ? 'Default mode':'Dark mode';
-    themeButton.setAttribute('title', tooltipText);
-  };
-  themeButton.addEventListener('mouseover', setTooltipText);
+  const tooltipText = getCurrentTheme() === 'dark' ? 'Default mode' : 'Dark mode'
+  themeButton.setAttribute('title', tooltipText)
+}
+themeButton.addEventListener('mouseover', setTooltipText)
 
 
 /*==================== COLOR PICKER ====================*/ 

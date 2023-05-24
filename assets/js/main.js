@@ -203,7 +203,7 @@ themeButton.addEventListener('click', () => {
 })
 
 const setTooltipText = () => {
-  const tooltipText = getCurrentTheme() === 'dark' ? 'Default mode' : 'Dark mode'
+  const tooltipText = getCurrentTheme() === 'dark' ? 'Light mode' : 'Dark mode'
   themeButton.setAttribute('title', tooltipText)
 }
 themeButton.addEventListener('mouseover', setTooltipText)

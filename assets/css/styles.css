@@ -745,12 +745,12 @@ img {
 .service__container {
   gap: 1.5rem;
   grid-template-columns: repeat(2, 1fr);
-  position: relative;
+  /* position: relative;
   background-color: var(--container-color);
   padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   border-radius: 1.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-  transition: .3s;
+  transition: .3s; */
 
 }
 

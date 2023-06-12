@@ -296,3 +296,16 @@ document.getElementById('form').addEventListener('submit', function(event) {
         new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
         
+
+        const cvButton = document.querySelector('.about__buttons a');
+        const tooltipMessage = 'Go to see my new CV';
+        
+        cvButton.addEventListener('mouseover', () => {
+          cvButton.setAttribute('title', tooltipMessage);
+        });
+        
+        cvButton.addEventListener('mouseout', () => {
+          cvButton.removeAttribute('title');
+        });
+        
+        

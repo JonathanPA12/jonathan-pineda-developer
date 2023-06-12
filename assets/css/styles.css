@@ -1666,3 +1666,11 @@ img {
   right: 0;
   z-index: 9999;
 }
+
+#cv-tooltip {
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #000;
+  font-size: 0.8rem;
+}

@@ -1,4 +1,5 @@
 {
     "discord.enabled": false,
-    "discord.detailsIdling": "developing"
+    "discord.detailsIdling": "developing",
+    "liveServer.settings.port": 5501
 }

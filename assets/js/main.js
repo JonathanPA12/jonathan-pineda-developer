@@ -307,5 +307,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
         cvButton.addEventListener('mouseout', () => {
           cvButton.removeAttribute('title');
         });
-        
+  
+        //reconocimiento de voz
+        const reconocimiento = new webkitSpeechRecognition();
+        reconocimiento.lang = "es-ES";
+        reconocimiento.continuous = true;
+        reconocimiento.onresult = evento => {
+          for(const result of evento.results){
+           console.log(result[0].transcript);
+          }
+          // console.log(evento.results);
+          // document.getElementById("texto").innerHTML = evento.results[0][0].transcript;
+        }
+        reconocimiento.start();
         

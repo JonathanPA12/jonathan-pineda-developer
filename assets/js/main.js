@@ -307,17 +307,31 @@ document.getElementById('form').addEventListener('submit', function(event) {
         cvButton.addEventListener('mouseout', () => {
           cvButton.removeAttribute('title');
         });
-  
-        //reconocimiento de voz
-        const reconocimiento = new webkitSpeechRecognition();
-        reconocimiento.lang = "es-ES";
-        reconocimiento.continuous = true;
-        reconocimiento.onresult = evento => {
-          for(const result of evento.results){
-           console.log(result[0].transcript);
-          }
-          // console.log(evento.results);
-          // document.getElementById("texto").innerHTML = evento.results[0][0].transcript;
-        }
-        reconocimiento.start();
-        
+  // Reconocimiento de voz
+const reconocimiento = new webkitSpeechRecognition();
+reconocimiento.lang = "es-ES";
+reconocimiento.continuous = true;
+
+let reconocimientoActivo = true;
+
+reconocimiento.onresult = evento => {
+  const transcript = evento.results[evento.results.length - 1][0].transcript;
+  console.log(transcript);
+
+  const textoElement = document.getElementById("texto");
+  textoElement.textContent = transcript;
+
+  // if (transcript.toLowerCase() === "Stop") {
+  //   if (reconocimientoActivo) {
+  //     reconocimiento.stop();
+  //     reconocimientoActivo = false;
+  //   }
+  // } else if (transcript.toLowerCase() === "start") {
+  //   if (!reconocimientoActivo) {
+  //     reconocimiento.start();
+  //     reconocimientoActivo = true;
+  //   }
+  // }
+};
+
+reconocimiento.start();

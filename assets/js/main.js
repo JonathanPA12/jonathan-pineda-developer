@@ -307,31 +307,41 @@ document.getElementById('form').addEventListener('submit', function(event) {
         cvButton.addEventListener('mouseout', () => {
           cvButton.removeAttribute('title');
         });
+
   // Reconocimiento de voz
-const reconocimiento = new webkitSpeechRecognition();
-reconocimiento.lang = "es-ES";
-reconocimiento.continuous = true;
+// const reconocimiento = new webkitSpeechRecognition();
+// reconocimiento.lang = "es-ES";
+// reconocimiento.continuous = true;
 
-let reconocimientoActivo = true;
+// let reconocimientoActivo = true;
 
-reconocimiento.onresult = evento => {
-  const transcript = evento.results[evento.results.length - 1][0].transcript;
-  console.log(transcript);
+// reconocimiento.onresult = evento => {
+//   const transcript = evento.results[evento.results.length - 1][0].transcript;
+//   console.log(transcript);
 
-  const textoElement = document.getElementById("texto");
-  textoElement.textContent = transcript;
+//   const textoElement = document.getElementById("texto");
+//   textoElement.textContent = transcript;
 
-  // if (transcript.toLowerCase() === "Stop") {
-  //   if (reconocimientoActivo) {
-  //     reconocimiento.stop();
-  //     reconocimientoActivo = false;
-  //   }
-  // } else if (transcript.toLowerCase() === "start") {
-  //   if (!reconocimientoActivo) {
-  //     reconocimiento.start();
-  //     reconocimientoActivo = true;
-  //   }
-  // }
-};
+//   // if (transcript.toLowerCase() === "Stop") {
+//   //   if (reconocimientoActivo) {
+//   //     reconocimiento.stop();
+//   //     reconocimientoActivo = false;
+//   //   }
+//   // } else if (transcript.toLowerCase() === "start") {
+//   //   if (!reconocimientoActivo) {
+//   //     reconocimiento.start();
+//   //     reconocimientoActivo = true;
+//   //   }
+//   // }
+// };
 
-reconocimiento.start();
+// reconocimiento.start();
+let welcome = "Hello I'm";
+ let username = "Jonathan";
+ let userlastname = "Pineda";
+ let space = " ";
+ let exaclamacion = "!";
+
+ const titulo = document.getElementById("titulo");
+ titulo.textContent = welcome + space +username + space + userlastname + exaclamacion;
+ 
